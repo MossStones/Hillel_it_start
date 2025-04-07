@@ -2,8 +2,6 @@ lst = []
 if len(lst) >= 2:
     a = lst.pop()
     lst.insert(0, a)
+    print()
 else:
-  int (lst == 1 or lst == [])
-print(lst)
-
-
+ print(lst)
