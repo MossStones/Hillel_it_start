@@ -1,5 +1,6 @@
+
 import random
-lst1 = [random.randint(3, 10) for random_lst1 in range(10)]
-print(lst1)#ЦЕ ВАМ ПРОСТО ДЛЯ ПРИКЛАДУ ЩО РАНДОМ ПРАЦЮЄ
-new_lst = lst1[0], lst1[2], lst1[-2]
-print(new_lst)
+numbers = [random.randint(1, 100) for _ in range(random.randint(3, 10))]
+new_list = [numbers[0], numbers[2], numbers[-2]]
+print(numbers)
+print(new_list)
