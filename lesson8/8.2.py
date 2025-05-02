@@ -1,5 +1,8 @@
-def is_palindrome(text):
+def is_palindrome(text: str) ->  bool :
     text = ''.join(c.lower() for c in text if c.isalnum())
     return text == text[::-1]
-text = input("Введіть щось:")
-print(is_palindrome(text))
+assert is_palindrome('A man, a plan, a canal: Panama') == True, 'Test1'
+assert is_palindrome('0P') == False, 'Test2'
+assert is_palindrome('a.') == True, 'Test3'
+assert is_palindrome('aurora') == False, 'Test4'
+print("Оk")
